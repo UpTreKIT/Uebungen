@@ -11,20 +11,28 @@ using System.Threading.Tasks;
 ///
 namespace rechner_plus_minus_mal_geteilt
 {
+    
     internal class Program
     {
         static void Main(string[] args)
         {
-            bool penis = IstZahl("0");
 
-            Console.Write("Rechenoperation eingeben(+, -, * oder /):"); // +, -, *, /
+
+            string textToEnter = ">RECHNUNGSPROGRAMM<";                                                                             //Text mittisch ausgeben 
+            Console.WriteLine(String.Format("{0," + ((Console.WindowWidth / 2) + (textToEnter.Length / 2)) + "}", textToEnter));    //
+
+            Console.WriteLine($"\t\t\t\t\t\t  {DateTime.Now}");                                                                      //Datum und Uhrzeit ausgeben 
+            bool rechner = IstZahl("0");                                                                                             // Durch \t platzhalter
+
+
+            Console.Write("Rechenoperation eingeben: " + Environment.NewLine + "(+, -, * oder /):"); // +, -, *, /                     // durch + Environment.NewLine + springt text in nächste zeile 
 
             string eingegeben = Console.ReadLine();
             int ergebnis1 = 0;
 
             if (eingegeben == "+")
             {
-                Console.WriteLine("Rechenoperation + gewaehlt");
+                Console.WriteLine("Rechenoperation + gewaehlt\n");
                 Console.WriteLine("Erste Zahl eingeben: ");
                 int zahl1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Zweite Zahl eingeben: ");
@@ -36,7 +44,7 @@ namespace rechner_plus_minus_mal_geteilt
 
             else if (eingegeben == "-")
             {
-                Console.WriteLine("Rechenoperation - gewaehlt");
+                Console.WriteLine("Rechenoperation - gewaehlt\n");
                 Console.WriteLine("Erste Zahl eingeben: ");
                 int zahl1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Zweite Zahl eingeben: ");
@@ -49,7 +57,7 @@ namespace rechner_plus_minus_mal_geteilt
 
             else if (eingegeben == "*")
             {
-                Console.WriteLine("Rechenoperation * gewaehlt");
+                Console.WriteLine("Rechenoperation * gewaehlt\n");
                 Console.WriteLine("Erste Zahl eingeben: ");
                 int zahl1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Zweite Zahl eingeben: ");
@@ -61,7 +69,7 @@ namespace rechner_plus_minus_mal_geteilt
 
             else if (eingegeben == "/")
             {
-                Console.WriteLine("Rechenoperation / gewaehlt");
+                Console.WriteLine("Rechenoperation / gewaehlt\n");
                 Console.WriteLine("Erste Zahl eingeben: ");
                 int zahl1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Zweite Zahl eingeben: ");
@@ -95,11 +103,11 @@ namespace rechner_plus_minus_mal_geteilt
 
 
             Console.ReadKey();
-        } 
+        }
         static bool IstZahl(string eingabe)
         {
             bool istzahl = false;
-            return istzahl; 
+            return istzahl;
         }
     }
 }
