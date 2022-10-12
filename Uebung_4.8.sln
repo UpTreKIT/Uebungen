@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zahlenreihe", "zufallszahle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bubblesort", "Bubblesort\bubblesort.csproj", "{726EA3F0-931A-4B59-9131-1EC018A60469}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zahlen_ueberpuefen", "zahlen_ueberpuefen\zahlen_ueberpuefen.csproj", "{8537249B-3F28-4178-B5F6-95DD548F9569}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{726EA3F0-931A-4B59-9131-1EC018A60469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{726EA3F0-931A-4B59-9131-1EC018A60469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{726EA3F0-931A-4B59-9131-1EC018A60469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8537249B-3F28-4178-B5F6-95DD548F9569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8537249B-3F28-4178-B5F6-95DD548F9569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8537249B-3F28-4178-B5F6-95DD548F9569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8537249B-3F28-4178-B5F6-95DD548F9569}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
